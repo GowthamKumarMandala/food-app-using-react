@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="navbar-logo">
+        <!-- Insert your logo image here -->
+        <img style="width: 50px;" src="data:image/jpeg;base64,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" alt="Logo">
+      </div>
+      <a class="navbar-brand" href="#">Food App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a onclick="say()" class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a onclick="say()" class="nav-link" href="#">products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Pizza</a></li>
+              <li><a class="dropdown-item" href="#">chicken</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">burger</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a onclick="say()" class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+<br/>
+    <footer style="margin: 491px 0 0 22px ; justify-content: space-between;" >
+      <span style="justify-content: center;">Created by <a href="https://www.linkedin.com/in/mandala-gowtham-kumar-393669217">GowthamMandala</a> © 2023 All rights are
+          reserved.</span>
+  </footer>
+  <script>
+    function say(){
+      alert("please buy one product")
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
